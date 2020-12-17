@@ -8,7 +8,7 @@ export default {
   plugins: [
     resolve(),
   ],
-  context: '(globalThis || global || self || window || undefined)',
+  context: '(global || self || globalThis || window || undefined)',
   output: {
     format: 'umd',
     name: 'ZXing',
